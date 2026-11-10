@@ -497,6 +497,13 @@ body {
   transform: rotate(0deg) translateY(-2px);
   box-shadow: 12px 16px 40px rgba(0, 0, 0, 0.14);
 }
+.photo__caption {
+  margin-top: 14px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.16em;
+  color: var(--ink-3);
+}
 .photo__img {
   display: block;
   width: 100%;
