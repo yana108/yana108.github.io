@@ -242,8 +242,10 @@ body {
 
 /* ==================== Sections ==================== */
 
-.section { padding: 120px 0; }
-.section--about { border-top: 1px solid var(--line); }
+.section {
+  padding: 120px 0;
+  border-top: 1px solid var(--line);
+}
 
 /* ==================== Plan ==================== */
 
@@ -483,7 +485,6 @@ body {
 
 .section--contact {
   padding: 150px 0;
-  border-top: 1px solid var(--line);
 }
 .contact__title {
   font-family: var(--display);
