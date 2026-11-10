@@ -137,10 +137,10 @@ body {
 .section__title {
   font-family: var(--serif);
   font-weight: 600;
-  font-size: clamp(30px, 5.2vw, 54px);
-  line-height: 1.4;
+  font-size: clamp(26px, 4.2vw, 40px);
+  line-height: 1.45;
   letter-spacing: 0.02em;
-  margin-bottom: 52px;
+  margin-bottom: 44px;
 }
 
 /* ==================== Hero ==================== */
@@ -155,15 +155,15 @@ body {
 .hero__title {
   font-family: var(--display);
   font-weight: 700;
-  font-size: clamp(64px, 11.5vw, 132px);
-  line-height: 1.06;
+  font-size: clamp(56px, 9.4vw, 96px);
+  line-height: 1.08;
   letter-spacing: 0.01em;
   margin-bottom: 22px;
 }
 
 .hero__tagline {
   font-family: var(--serif);
-  font-size: clamp(19px, 2.2vw, 24px);
+  font-size: clamp(17px, 1.9vw, 21px);
   font-weight: 600;
   line-height: 1.75;
   letter-spacing: 0.01em;
@@ -305,7 +305,7 @@ body {
 
 .plan-item h3 {
   font-family: var(--serif);
-  font-size: clamp(22px, 2.8vw, 30px);
+  font-size: clamp(19px, 2.4vw, 26px);
   font-weight: 600;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
@@ -513,10 +513,10 @@ body {
 .contact__title {
   font-family: var(--display);
   font-weight: 700;
-  font-size: clamp(52px, 10.5vw, 110px);
-  line-height: 1;
+  font-size: clamp(44px, 8.2vw, 88px);
+  line-height: 1.02;
   letter-spacing: -0.01em;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 /* ==================== Closing ==================== */
@@ -530,7 +530,7 @@ body {
 .closing .photo__img { width: 100%; }
 .closing__lead {
   font-family: var(--serif);
-  font-size: clamp(24px, 2.6vw, 28px);
+  font-size: clamp(20px, 2.2vw, 24px);
   font-weight: 600;
   line-height: 1.55;
   letter-spacing: 0.02em;
@@ -639,7 +639,7 @@ body {
   .section { padding: 80px 0; }
   .section--contact { padding: 110px 0; }
   .hero { padding: 70px 0 60px; }
-  .hero__title { font-size: clamp(48px, 13vw, 64px); }
+  .hero__title { font-size: clamp(40px, 12vw, 52px); }
   .nav { padding: 18px 0; }
   .nav__logo { font-size: 15px; }
   .nav__links { gap: 12px; }
