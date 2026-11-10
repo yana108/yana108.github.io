@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yana Chen — Indie Developer Connector</title>
+  <meta name="description" content="Yana Chen. 把独立开发者们连接起来——互相推荐产品、交换用户。sidewave 团队成员。" />
+  <link rel="preconnect" href="https://fonts.loli.net" />
+  <link rel="preconnect" href="https://gstatic.loli.net" crossorigin />
+  <link rel="stylesheet" href="https://fonts.loli.net/css2?family=JetBrains+Mono:wght@400;500;600&family=Noto+Serif:wght@600;700&family=Fraunces:wght@600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@600;700&text=%E2%80%94%E2%80%99%E3%80%82%E4%B8%80%E4%B8%9C%E4%BA%92%E4%BA%A7%E4%BA%BA%E4%BB%8B%E4%BC%98%E4%BD%A0%E4%BF%A1%E5%81%9A%E5%8F%91%E5%90%88%E5%90%8E%E5%93%81%E5%9C%A8%E5%A4%9A%E5%A4%A7%E5%A5%BD%E5%A6%82%E5%AE%B6%E5%AF%B9%E5%AF%BB%E5%B7%B1%E5%BC%80%E5%BF%83%E6%88%91%E6%89%BE%E6%8A%8A%E6%8E%A8%E6%98%AF%E6%9B%B4%E6%9C%89%E6%9D%A5%E6%9E%9C%E6%AC%A2%E6%AD%A3%E6%B5%81%E7%84%B6%E7%8B%AC%E7%9A%84%E7%9B%B8%E7%9C%8B%E7%A7%80%E7%AB%8B%E7%BB%8D%E7%BB%99%E8%80%85%E8%81%9A%E8%87%AA%E8%8D%90%E8%A2%AB%E8%A5%BF%E8%A7%81%E8%AE%A4%E8%AF%86%E8%B5%B7%E8%BF%8E%E9%87%8F%EF%BC%8C&display=swap" />
+  <link rel="stylesheet" href="https://fonts.loli.net/css2?family=Noto+Sans+SC:wght@400;600&text=%E2%80%94%E2%80%99%E3%80%81%E3%80%82%E3%80%8C%E3%80%8D%E4%B8%80%E4%B8%8A%E4%B8%8B%E4%B8%8E%E4%B8%9C%E4%B8%A4%E4%B8%AA%E4%B8%AD%E4%B9%9F%E4%BA%8B%E4%BA%92%E4%BA%A4%E4%BA%A7%E4%BA%BA%E4%BB%8B%E4%BB%8E%E4%BB%96%E4%BB%AC%E4%BB%B6%E4%BC%98%E4%BC%A0%E4%BD%8D%E4%BD%9C%E4%BD%A0%E4%BE%BF%E4%BF%A1%E5%81%9A%E5%85%A5%E5%85%A8%E5%85%B1%E5%85%B6%E5%86%85%E5%87%86%E5%88%86%E5%88%9B%E5%88%B0%E5%88%B6%E5%89%8D%E5%8A%9B%E5%8A%A0%E5%8A%A8%E5%8D%83%E5%8D%95%E5%8F%91%E5%8F%AA%E5%8F%B0%E5%8F%B7%E5%90%84%E5%90%88%E5%90%8C%E5%90%8D%E5%90%8E%E5%90%B8%E5%91%98%E5%92%8C%E5%93%81%E5%98%89%E5%9B%A2%E5%9C%A8%E5%9D%97%E5%A4%87%E5%A4%8D%E5%A4%9A%E5%A4%A7%E5%A4%A9%E5%A5%B9%E5%A5%BD%E5%A6%82%E5%AD%90%E5%AE%B6%E5%AE%B9%E5%AE%BE%E5%AF%B9%E5%AF%BB%E5%B1%82%E5%B7%B1%E5%B7%B2%E5%B8%83%E5%B9%B3%E5%BA%94%E5%BA%A6%E5%BA%A7%E5%BC%80%E5%BC%95%E5%BD%A9%E5%BE%AE%E5%BF%83%E5%BF%AB%E6%83%B3%E6%88%90%E6%88%91%E6%88%96%E6%88%B7%E6%89%BE%E6%8A%8A%E6%8C%89%E6%8D%A2%E6%8E%A5%E6%8E%A8%E6%8F%90%E6%90%AD%E6%92%AD%E6%94%B6%E6%95%A3%E6%97%B6%E6%98%AF%E6%99%AF%E6%9B%B4%E6%9B%BE%E6%9C%89%E6%9D%A1%E6%9D%A5%E6%9E%9C%E6%AC%A2%E6%AD%A3%E6%B2%A1%E6%B3%95%E6%B4%BB%E6%B5%81%E7%84%B6%E7%85%A7%E7%89%87%E7%89%8C%E7%8B%97%E7%8B%AC%E7%8E%A9%E7%8E%B0%E7%94%A8%E7%95%99%E7%99%BD%E7%9A%84%E7%9B%98%E7%9B%AE%E7%9B%B8%E7%9C%8B%E7%9F%A5%E7%A4%BE%E7%A7%80%E7%AB%8B%E7%AC%AC%E7%AE%97%E7%B3%BB%E7%BA%BF%E7%BB%8D%E7%BB%99%E8%80%85%E8%81%8A%E8%81%94%E8%81%9A%E8%83%8C%E8%87%AA%E8%8D%90%E8%90%A5%E8%9B%8B%E8%A2%AB%E8%A5%BF%E8%A7%81%E8%AE%A4%E8%AE%A9%E8%AF%86%E8%AF%BB%E8%B5%B7%E8%BA%AB%E8%BD%AE%E8%BF%87%E8%BF%8E%E8%BF%90%E8%BF%99%E8%BF%9B%E8%BF%9E%E9%80%89%E9%81%93%E9%83%A8%E9%87%8C%E9%87%8F%E9%98%85%E9%98%9F%E9%9A%8F%E9%9A%BE%E9%A1%B9%E9%A1%BA%E9%A2%91%EF%BC%88%EF%BC%89%EF%BC%8C%EF%BC%9A&display=swap" />
+  <link rel="stylesheet" href="style.css?v=31" />
+</head>
+<body>
+
+  <!-- 阅读进度条 -->
+  <div class="progress" aria-hidden="true"><div class="progress__bar" id="progressBar"></div></div>
+
+  <!-- 背景层 -->
+  <canvas class="stars" id="stars" aria-hidden="true"></canvas>
+  <canvas class="trail" id="trail" aria-hidden="true"></canvas>
+
+  <!-- ==================== Nav ==================== -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__logo" href="#top">YANA.CHEN<span class="dot">.</span></a>
+      <nav class="nav__links">
+        <a href="#plan">PLAN</a>
+        <a href="#contact">LET'S TALK</a>
+        <button class="nav__theme" id="themeToggle" type="button">DARK</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== Hero ==================== -->
+    <section class="hero" id="top">
+      <div class="container" data-stagger>
+        <p class="label">SHANGHAI · INDIE DEVELOPER CONNECTOR</p>
+        <h1 class="hero__title">Yana Chen<span class="dot">.</span></h1>
+        <p class="hero__tagline">
+          正在寻找优秀的独立开发者，一起把好产品推给更多人<br class="br-desktop" />——如果你对自己做的东西有信心，欢迎来找我。
+        </p>
+
+        <div class="terminal" id="terminal">
+          <div class="terminal__body">
+            <p class="terminal__line"><span class="prompt">$</span> whoami</p>
+            <p class="terminal__line terminal__line--out">yana.chen</p>
+            <p class="terminal__line"><span class="prompt">$</span> mission</p>
+            <p class="terminal__line terminal__line--out">&gt; connecting indie developers, online &amp; offline</p>
+            <p class="terminal__line"><span class="prompt">$</span> status</p>
+            <p class="terminal__line terminal__line--out">&gt; open to talk<span class="caret" aria-hidden="true"></span></p>
+          </div>
+        </div>
+
+        <div class="hero__links">
+          <button class="link-text" data-copy-wechat>wechat ↗</button>
+          <span class="link-sep">·</span>
+          <a class="link-text" href="mailto:chenyana820@gmail.com">email</a>
+          <span class="link-sep">·</span>
+          <a class="link-text" href="https://linkedin.com/in/yana-c-6269301b0" target="_blank" rel="noopener">linkedin</a>
+          <span class="link-sep">·</span>
+          <a class="link-text" href="https://xhslink.cn/o/3v8TE31vl4g" target="_blank" rel="noopener">xiaohongshu</a>
+          <span class="link-sep">·</span>
+          <a class="link-text" href="https://sidewave.link" target="_blank" rel="noopener">sidewave ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Marquee ==================== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>CONNECT PEOPLE ✦ CROSS-PROMOTE ✦ EXCHANGE USERS ✦ POOL TRAFFIC ✦ MEET OFFLINE ✦</span>
+        <span>CONNECT PEOPLE ✦ CROSS-PROMOTE ✦ EXCHANGE USERS ✦ POOL TRAFFIC ✦ MEET OFFLINE ✦</span>
+      </div>
+    </div>
+
+    <!-- ==================== Plan ==================== -->
+    <section class="section" id="plan">
+      <div class="container" data-stagger>
+        <p class="label">01 · THE PLAN</p>
+        <h2 class="section__title">
+          认识，介绍，<br />然后一起被看见<span class="dot">。</span>
+        </h2>
+
+        <ul class="plan-list">
+          <li class="plan-item">
+            <span class="plan-item__no">01</span>
+            <div>
+              <h3>认识大家 <span class="plan-item__en">connect()</span></h3>
+              <p>在各大平台和线下认识独立开发者，留微信、交换想法。</p>
+            </div>
+          </li>
+          <li class="plan-item">
+            <span class="plan-item__no">02</span>
+            <div>
+              <h3>互相推荐 <span class="plan-item__en">cross_promote()</span></h3>
+              <p>给你的产品找个搭子，用共同的力量吸引更多同频的人。</p>
+            </div>
+          </li>
+          <li class="plan-item">
+            <span class="plan-item__no">03</span>
+            <div>
+              <h3>聚合流量 <span class="plan-item__en">pool_traffic()</span></h3>
+              <p>把分散的流量聚合起来，一起与品牌合作。</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="plan__cta">
+          <p class="cmd"><span class="prompt">$</span> join_the_network — 加我微信聊聊</p>
+          <button class="btn btn--mini" data-copy-wechat>复制微信号 SideWave0_1</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Let's talk（自白 + 照片 + 联系 + sidewave） ==================== -->
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <div class="contact__head" data-stagger>
+          <p class="label">02 · CONTACT</p>
+          <h2 class="contact__title">Let’s talk<span class="dot">.</span></h2>
+        </div>
+
+        <div class="closing" data-stagger>
+          <div class="photo-wrap">
+            <figure class="photo">
+              <img class="photo__img" src="yana-dog.jpg" alt="Yana 和她的狗" loading="lazy" />
+            </figure>
+          </div>
+          <div class="closing__text">
+            <p class="closing__lead">
+              我是 Yana。
+            </p>
+            <p class="closing__sub">
+              曾做过 Chanel 的品牌传播，也做过 Web3 的活动和运营。
+            </p>
+            <p class="closing__sub">
+              品牌传播让我知道一个东西被看见有多难，活动运营让我知道人和人连起来有多快。现在，我想把这两件事用在独立开发者身上。
+            </p>
+            <p class="closing__sub">
+              如果你也在做产品，或者只是想认识一下，随时找我聊聊。
+            </p>
+          </div>
+        </div>
+
+        <div class="team team--inline" data-stagger>
+          <p class="team__label">BY THE WAY · SIDEWAVE TEAM</p>
+          <p class="team__intro">
+            顺便提一下，我目前在 <a class="link-text" href="https://sidewave.link" target="_blank" rel="noopener">sidewave team</a>，正在准备 launch 的项目：
+          </p>
+          <ul class="team__products">
+            <li>
+              <span class="team__no">01</span>
+              <div>
+                <h3>1K <span class="team__en">social app</span></h3>
+                <p>一个有嘉宾名单的社交应用：一千位被选中的创作者在这里发布，其他人从第一天起读到全部一千位。没有算法，内容是一块块「盘子」，一千个座位轮换，收入按座位平分。</p>
+              </div>
+            </li>
+            <li class="team__products--minor">
+              <span class="team__no">02</span>
+              <div>
+                <h3>GenZ PPT <span class="team__en">easter egg</span></h3>
+                <p>一个好玩的彩蛋项目。</p>
+              </div>
+            </li>
+          </ul>
+          <a class="link-text" href="https://sidewave.link" target="_blank" rel="noopener">sidewave.link ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== Footer ==================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__name">YANA CHEN<span class="dot">.</span></p>
+      <div class="footer__links">
+        <button class="footer__link" data-copy-wechat>wechat</button>
+        <a class="footer__link" href="mailto:chenyana820@gmail.com">email</a>
+        <a class="footer__link" href="https://sidewave.link" target="_blank" rel="noopener">sidewave</a>
+      </div>
+      <p class="footer__copy">© 2026</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">微信号已复制</div>
+
+  <script src="script.js?v=16"></script>
+</body>
+</html>
